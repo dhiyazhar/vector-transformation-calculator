@@ -48,6 +48,28 @@ function identityMatrix(vector){
     return matrix;
 }
 
+function projection(vector) {
+    let array = hasiluuT (vector);
+    for(var i = 0; i < vector.length; i++ ){
+        for(var j = 0; j < vector.length; j++){
+            
+            const resultProjection = array[i][j] / panjang(vector);
+            array [i][j] = resultProjection.toFixed(2);
+
+        }
+    }
+
+    let result = [];
+    for(var i = 0; i < vector.length; i++ ){
+        let temp = "[";
+        temp += array[i].join(", ");
+        temp += "]";
+        result.push (temp);
+    }
+
+    return result.join(", ");
+}
+
 function reflection(vector){
     let array = hasiluuT(vector);
     let length = panjang(vector);
