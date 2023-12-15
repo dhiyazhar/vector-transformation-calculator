@@ -87,9 +87,42 @@ function reflection(vector){
  
     return result.join(", ");
 }
-   
+
+function calculateRotation(vector, angleInDegrees) {
+
+    if (vector.length !== 2) {
+
+        return "Error, silahkan masukkan vector 2D."; 
+
+    }
+
+    const angleInRadians = (angleInDegrees * Math.PI) / 180;
+    const cosTheta = Math.cos(angleInRadians);
+    const sinTheta = Math.sin(angleInRadians);
+
+    const rotationMatrix = [
+        [cosTheta, -sinTheta],
+        [sinTheta, cosTheta]
+    ];
+
+    const resultArray = [];
+
+    for (let i = 0; i < vector.length; i++) {
+        let result = 0;
+
+        for (let j = 0; j < rotationMatrix[i].length; j++) {
+            result += rotationMatrix[i][j] * vector[j];
+        }
+
+        resultArray.push(result.toFixed(2));
+    }
+
+    return resultArray.join(", ");
+}
+
 function calculateResults() {
     const vectorV = document.getElementById('vectorV').value;
+    const angle = parseFloat(document.getElementById('rotationAngle').value);
     const v = vectorV.split(',').map(Number);
     console.log(panjang(v));
     console.log(hasiluuT(v));
@@ -99,4 +132,23 @@ function calculateResults() {
     document.getElementById('projection-result').innerHTML = `Projection Matrix: [ ${projection(v)} ]`;
 
     document.getElementById('reflection-result').innerHTML = `Reflection Matrix: [ ${reflection(v)} ]`;
+
+    const rotationResult = calculateRotation(v, angle);
+
+    if (rotationResult.startsWith("Error")) {
+        console.log(rotationResult);
+        document.getElementById('rotation-result').innerHTML = rotationResult;
+    } else {
+        console.log("Rotation Result: " + rotationResult);
+        document.getElementById('rotation-result').innerHTML = `Rotation Result: [ ${rotationResult} ]`;
+    }
+
 }
+
+document.addEventListener('keyup', function (event) {
+    if (event.key === 'Enter') {
+        calculateResults();
+    }
+});
+
+    
