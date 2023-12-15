@@ -1,0 +1,102 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 80px auto;
+    display: inline-grid;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.calculator-container {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.rotation-container {
+    grid-column: 2;
+    grid-row: 1;
+    margin-left: 100px;
+}
+
+h2 {
+    color: #3498db;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #27ae60;
+}
+
+/* Improved styling for select element */
+select {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+select:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+.result {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
