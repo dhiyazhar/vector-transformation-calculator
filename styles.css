@@ -7,7 +7,7 @@ html {
     color: #FFF;
     text-align: center;
     font-family: Poppins;
-    font-size: 38px;
+    font-size: 28px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -19,8 +19,8 @@ html {
     justify-content: center;
     align-items: center;
     margin: auto;
-    width: 70%;
-    height: 270px;
+    width: 65%;
+    height: 200px;
     flex-shrink: 0;
     border-radius: 40px;
     background: #202127;
@@ -36,12 +36,13 @@ html {
     background: #676DE7;
     flex-shrink: 0;
     cursor: pointer;
-    margin-top: 25px;
+    margin-top: 10px;
+    margin-bottom: 25px;
 
     color: #FFF;
     text-align: center;
     font-family: Poppins;
-    font-size: 1vw;
+    font-size: 0.9vw;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -59,6 +60,7 @@ html {
     padding: 5px;
     display: flex;
     justify-content: space-between;
+    margin-top: 25px;
     margin-bottom: 10px;
 }
 
@@ -75,10 +77,10 @@ html {
     margin-left: 40px;
     margin-right: 10px;
     color: #808080;
-    padding-left: 30px;
+    padding-left: 25px;
 
     font-family: Poppins;
-    font-size: 22px;
+    font-size: 21px;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
@@ -91,10 +93,10 @@ html {
     margin-right: 40px;
     margin-left: 10px;
     color: #808080;
-    padding-left: 30px;
+    padding-left: 20px;
 
     font-family: Poppins;
-    font-size: 22px;
+    font-size: 21px;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
@@ -104,7 +106,7 @@ html {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    max-width: 70%;
+    max-width: 67%;
     margin: auto;
     margin-top: 20px;
     margin-bottom: 50px;
@@ -113,9 +115,9 @@ html {
 .projection, 
 .reflection, 
 .rotation {
-    width: 33%;
-    max-width: 33%;
-    height: 380px;
+    width: 30%;
+    max-width: 30%;
+    height: 330px;
     border-radius: 40px;
     background: #202127;
     padding: 20px;
@@ -123,8 +125,8 @@ html {
 }
 
 .reflection {
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .projection-text,
@@ -171,7 +173,7 @@ html {
 
 .github {
     text-align: center;
-    padding: 35px;
+    padding: 30px;
 }
 
 .github svg {
@@ -188,7 +190,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    padding: 10px;
+    margin-bottom: 10px;
     transform: translateX(-50%);
     left: 50%;
     
@@ -198,7 +200,7 @@ footer p {
     color: #98989F;
     text-align: center;
     font-family: Poppins;
-    font-size: 20px;
+    font-size: 13px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
