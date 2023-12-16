@@ -107,6 +107,7 @@ html {
     max-width: 70%;
     margin: auto;
     margin-top: 20px;
+    margin-bottom: 50px;
 }
 
 .projection, 
@@ -122,8 +123,8 @@ html {
 }
 
 .reflection {
-    margin-right: 15px;
-    margin-left: 15px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .projection-text,
@@ -168,12 +169,29 @@ html {
     line-height: normal;
 }
 
+.github {
+    text-align: center;
+    padding: 35px;
+}
+
+.github svg {
+    cursor: pointer;
+    fill: #FFF;
+}
+
+.github a:hover svg {
+    fill: #888;
+}
+
 footer {
     text-align: center;
     position: fixed;
     bottom: 0;
     width: 100%;
     padding: 10px;
+    transform: translateX(-50%);
+    left: 50%;
+    
 }
 
 footer p {
