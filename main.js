@@ -124,6 +124,16 @@
         const vectorV = document.getElementById('vectorV').value;
         const angle = parseFloat(document.getElementById('rotationAngle').value);
         const v = vectorV.split(',').map(Number);
+
+        if (vectorV.trim() === '') {
+
+            document.getElementById('projection-result').innerHTML = "Silahkan masukkan vector.";
+            document.getElementById('reflection-result').innerHTML = "Silahkan masukkan vector.";
+            document.getElementById('rotation-result').innerHTML = "Silahkan masukkan vector.";
+
+            return;
+
+        }
     
         document.getElementById('projection-result').innerHTML = `Projection Matrix: [ ${projection(v)} ]`;
     
