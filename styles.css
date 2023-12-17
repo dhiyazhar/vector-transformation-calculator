@@ -208,21 +208,21 @@ footer p {
     margin: 5px 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
     .title {
-        font-size: 12px;
+        font-size: 16px;
     }
     
     .input-card {
-        width: 80%;
-        height: 180px;
+        width: 65%;
+        height: 170px;
     }
 
     .input-card button {
         width: 10%;
         height: 40px;
 
-        font-size: 1vw;
+        font-size: 0.8vw;
     }
 
     #vectorV {
@@ -239,12 +239,13 @@ footer p {
     }
 
     .result {
-        max-width: 80%;
+        max-width: 65%;
     }
 
     .projection, .reflection, .rotation {
         width: 100%;
         max-width: 100%;
+        height: 280px;
     }
 
     .projection-text, .reflection-text, .rotation-text {
@@ -253,6 +254,11 @@ footer p {
 
     .projection-result, .reflection-result, .rotation-result {
         font-size: 15px;
+    }
+
+    .github {
+        padding: 0px;
+    }
     }
 }
 
