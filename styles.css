@@ -2,7 +2,6 @@ html {
     background: #1B1B1F;
     padding: 50px;
     margin: 0;
-    overflow: hidden;
 }
 
 .title {
@@ -208,3 +207,59 @@ footer p {
     line-height: normal;
     margin: 5px 0;
 }
+
+@media screen and (max-width: 1024px) {
+    .title {
+        font-size: 12px;
+    }
+    
+    .input-card {
+        width: 80%;
+        height: 180px;
+    }
+
+    .input-card button {
+        width: 10%;
+        height: 40px;
+
+        font-size: 1vw;
+    }
+
+    #vectorV {
+        font-size: 16px;
+    }
+
+    #rotationAngle {
+        font-size: 13px;
+        padding-left: 7px;
+    }
+
+    .input-row {
+        height: 50px;
+    }
+
+    .result {
+        max-width: 80%;
+    }
+
+    .projection, .reflection, .rotation {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .projection-text, .reflection-text, .rotation-text {
+        font-size: 18px;
+    }
+
+    .projection-result, .reflection-result, .rotation-result {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .input-card {
+        width: 90%;
+    }
+}
+
+
