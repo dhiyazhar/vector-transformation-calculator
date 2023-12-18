@@ -50,8 +50,8 @@ html {
 }
 
 .input-card button:active {
-    background: #4e54c8; 
-    color: #cfd8dc; 
+    background: #4e54c8;
+    color: #cfd8dc;
     transform: scale(0.98);
 }
 
@@ -65,7 +65,7 @@ html {
     margin-bottom: 10px;
 }
 
-#vectorV:focus, 
+#vectorV:focus,
 #rotationAngle:focus {
     color: #404040;
     font-weight: 500;
@@ -113,8 +113,8 @@ html {
     margin-bottom: 50px;
 }
 
-.projection, 
-.reflection, 
+.projection,
+.reflection,
 .rotation {
     width: 30%;
     max-width: 30%;
@@ -131,7 +131,7 @@ html {
 }
 
 .projection-text,
-.reflection-text, 
+.reflection-text,
 .rotation-text {
     display: flex;
     align-items: center;
@@ -143,7 +143,7 @@ html {
     justify-content: center;
     border-radius: 30px;
     background: #2B2F36;
-    
+
     color: #FFF;
     text-align: center;
     font-family: Poppins;
@@ -153,8 +153,8 @@ html {
     line-height: normal;
 }
 
-.projection-result, 
-.reflection-result, 
+.projection-result,
+.reflection-result,
 .rotation-result {
     display: flex;
     align-items: center;
@@ -162,7 +162,7 @@ html {
     text-align: center;
     margin: 20px;
     padding: 10px;
-    
+
     color: #FFF;
     text-align: center;
     font-family: Poppins;
@@ -194,7 +194,7 @@ footer {
     margin-bottom: 10px;
     transform: translateX(-50%);
     left: 50%;
-    
+
 }
 
 footer p {
@@ -208,7 +208,7 @@ footer p {
     margin: 5px 0;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1366px) {
     .title {
         font-size: 16px;
     }
@@ -260,12 +260,67 @@ footer p {
         padding: 0px;
     }
     }
-}
 
-@media screen and (max-width: 480px) {
-    .input-card {
-        width: 90%;
+
+@media screen and (max-width: 720px) {
+    .title  {
+        color: #676DE7;
+        font-size: 0.625rem;
     }
+
+    .input-card {
+        width: 100%;
+        height: 10rem;
+    }
+
+    .input-card button {
+        width: 20%;
+        height: 30px;
+        margin-top: 10px;
+
+        font-size: 1.7vw;
+    }
+
+    .input-row {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1.563rem;
+        margin-bottom: 10px;
+
+    }
+
+    #vectorV {
+        width: auto;
+        margin-left: 10px;
+        padding-left: 10px;
+        font-size: 1rem;
+    }
+
+    #rotationAngle {
+        width: 63%;
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-top: 4px;
+        font-size: 0.8rem;
+    }
+
+    .result {
+        flex-direction: column;
+    }
+
+    .reflection {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .projection, .reflection, .rotation {
+        max-width: 100%;
+;
+    }
+    
+
+
 }
 
 
